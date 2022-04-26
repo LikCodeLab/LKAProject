@@ -1,0 +1,13 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+apply from: "${rootDir}/tools/library.gradle"
+
+
+dependencies {
+    implementation deps.kotlin.core
+    implementation deps.androidx.appcompat
+    implementation deps.androidx.design
+}

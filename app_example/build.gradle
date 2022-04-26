@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+apply from: "${rootDir}/tools/app.gradle"
+
+android {
+
+    defaultConfig {
+        applicationId "com.kennie.example.library"
+
+    }
+
+}
+
+dependencies {
+    implementation deps.kotlin.core
+    implementation deps.androidx.appcompat
+    implementation deps.androidx.design
+    implementation project(':app_library')
+}
